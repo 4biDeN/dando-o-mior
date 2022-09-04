@@ -1,0 +1,16 @@
+n = int(input())
+t1 = 0
+t2 = 1
+lst = []
+lst.append(t1)
+lst.append(t2)
+#print('{} {}'.format(t1,t2), end='')
+cont = 3
+while cont <= n:
+    t3 = t1 + t2
+    lst.append(t3)
+    #print(' {}'.format(t3), end='')
+    print(*lst, sep=' ')
+    t1 = t2
+    t2 = t3
+    cont+=1
